@@ -1,10 +1,12 @@
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
+
 import java.awt.*;
 
 public class Exercicio1 extends JFrame {
     public Exercicio1() {
-        super("Painel de Controle");
+        super("Exercício 1");
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(300, 200);
@@ -17,7 +19,8 @@ public class Exercicio1 extends JFrame {
         painel.setBackground(Color.BLUE);
 
         // Define uma borda com um título para o painel
-        Border borda = BorderFactory.createTitledBorder("Painel de Controle");
+        TitledBorder borda = BorderFactory.createTitledBorder("Painel de Controle");
+        borda.setTitleColor(Color.WHITE);
         painel.setBorder(borda);
 
         // Cria um botão
