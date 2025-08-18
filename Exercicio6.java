@@ -4,7 +4,7 @@ import java.awt.*;
 public class Exercicio6 extends JFrame {
 
     public Exercicio6() {
-        setTitle("Exemplo JSplitPane");
+        setTitle("Exercicio 6");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 400);
 
@@ -20,8 +20,9 @@ public class Exercicio6 extends JFrame {
         //Criando o JSplitPane
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel1, panel2);
         splitPane.setDividerLocation(40); // o setDividerLocation define a posição inicial da divisória
-        splitPane.setOneTouchExpandable(true); // adiciona botões para expansão/retração
-
+        splitPane.setOneTouchExpandable(true); // adiciona botões para expansão/retração da divisória 
+        
+        //adicionando o slitpane ao painel
         add(splitPane);
 
         setVisible(true);
