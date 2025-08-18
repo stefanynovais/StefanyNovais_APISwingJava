@@ -18,7 +18,7 @@ public class Exercicio6 extends JFrame {
         panel2.setBackground(Color.BLUE);
 
         //Criando o JSplitPane
-        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel1, panel2);
+        JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, panel1, panel2);
         splitPane.setDividerLocation(40); // o setDividerLocation define a posição inicial da divisória
         splitPane.setOneTouchExpandable(true); // adiciona botões para expansão/retração da divisória 
         
